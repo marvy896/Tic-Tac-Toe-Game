@@ -1,0 +1,27 @@
+*,
+*::before,
+*,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    background-color:aquamarine ;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.TicTac{
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: red;
+}
+.TicTac .gridCell {
+   
+    width: 50px;
+    height: 50px;
+    background-color:aquamarine ;
+}
