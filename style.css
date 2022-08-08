@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 body{
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
     background-color:aquamarine ;
     display: grid;
     justify-content: center;
