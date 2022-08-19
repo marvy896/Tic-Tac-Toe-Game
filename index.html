@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
     <script defer src = "script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h2>Tic Tac Toe</h2>
     <div class="TicTac" id="board">
         <div class="gridCell" data-cell = '0' ></div> 
         <div class="gridCell" data-cell = '1'></div> 
@@ -21,8 +22,12 @@
         <div class="gridCell" data-cell = '8'></div> 
     </div>
     <div class="winning-message" id="winnerMessage">
-        <div data-winning-message-text> X wins</div>
+        <div data-winning-message-text></div>
         <button id="restartButton">Restart</button>
+    </div>
+    <div class="winning-message" id="DrawMessage">
+        <div data-draw-message-text></div>
+        <button id="restartButton2">Restart</button>
     </div>
 </body>
 </html>
