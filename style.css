@@ -12,9 +12,10 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: aquamarine;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -22,6 +23,7 @@ h2 {
 }
 
 .TicTac {
+    width: fit-content;
     gap: 5px;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -53,8 +55,8 @@ h2 {
     background-color: rgba(0, 0, 0, .13);
     /* justify-content: center; */
     align-items: center;
-    color: aliceblue;
-    font-size: 5rem;
+    color:red;
+    font-size: 3rem;
     flex-direction: column;
 }
 
@@ -77,4 +79,68 @@ h2 {
 }
 .winning-message.draw {
     display: flex;
+}
+
+.display-Result{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size:larger;
+}
+.display-Result .X-Wins, .O-Wins{
+    width: 80%;
+    /* height: 50px; */
+    background-color: beige;
+    justify-content: center;
+    padding: 10px;
+    margin: 2%;
+    border-radius: 20%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.display-Result .O-Wins {
+    text-align: left;
+    align-content: center;
+    /* direction: ltr; */
+}
+.display-Result .X-Wins {
+    text-align: right;
+}
+ .X{
+    width: 30px;
+    /* height: 35px; */
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20%;
+    border: 1px solid black;
+    padding: 0px;
+}
+
+ .O{
+    /* position: relative;
+    left: 180px;
+    top:1px; */
+    width: 30px;
+    /* height: 35px; */
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    justify-content: left;
+    border-radius: 20%;
+    border: 1px solid black;
+}
+.reSet{
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.reSet:hover{
+    background-color: red;
 }
